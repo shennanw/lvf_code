@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww51000\viewh25780\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Read me:\
+Data base is built using three files: addLVFDB2, calcul_Fp, preprocess_DB. \
+First run calcul_FP to calculate the false positive of spikes (if any).\
+\
+stf_ files: These are making the figures comparing the LFP, TF and rasters\
+\
+isidist: function returns the interspike interval distribution of a spike sequence and its mean and  coefficient of variation. If called without output arguments, the isi distribution is plotted.\
+\
+LVF_num_spike: Counting number of spikes from LVF onset till the end of LVF . Reading data from raster in data base and does not consider long units\
+\
+rater_distance_rev2: This file will make the over all raster plot\
+\
+Test_PCA: This file is evaluating the PCA on spikes before LVF and the same values for after LVF to calculate the mahal criteria.\
+\
+mahal_intercluster_dist: Based on the values that we found for the distance of the clusters from Test_PCA, this file make the plot to show the mahalabis distance\
+\
+peaksN: ca;curating the peaks but we didn\'92t use for this project\
+\
+mua_428: The file for analysis the multi units\
+\
+compare_micro_macro_raster: Was the initial program written for comparing these data\
+\
+Gaussian_kernel_rev & loopforkernel: The function calculating the Gaussian kernel along with loopforkernel which calculate thetas value for all units\
+\
+Test_keman: By using the spread sheetand calculated features we will classify the neurons to inhibitory and excitatory by using Kmean clustering.  We also demonstrated the mean of each group to show that the mean of the shape of neurons are different as they classified differently Then we classified the neurons in each region separately and we find that inhibitory and excitatory neurons are better to classified in hippocampus\
+\
+ripple detector: This program is used to detect the ripples before and after LVF, all values have been saved in database. We analyzed each seizure separately and the threshold for each may slightly changed.\
+\
+Test_aligned_rev: This program compare the smoothed wave shape of the spikes in each region and separately for inhibitory and excitatory\
+\
+}
